@@ -92,13 +92,13 @@
         <include refid="page_where" />
 	</select>
 
-    <select id="getCount" resultType="int" >
+    <select id="selectCount" resultType="int" >
         select count(ID) from ${table_name}
         <include refid="page_where" />
     </select>
 
 
-    <select id="getByPrimaryKey" resultMap="${class_name?uncap_first}ResultMap" parameterType="String" >
+    <select id="selectByPrimaryKey" resultMap="${class_name?uncap_first}ResultMap" parameterType="String" >
 		select <include refid="table_columns" />
 		from ${table_name}
 		where ID = ${r"#"}{id}
