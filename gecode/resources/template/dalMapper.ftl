@@ -15,7 +15,7 @@ public interface ${class_name}Dao {
 
     List<${class_name}> select(${class_name} record);
 
-    Integer getCount(${class_name} record);
+    Integer selectCount(${class_name} record);
 
     ${class_name} selectByPrimaryKey(Object key);
 
