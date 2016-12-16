@@ -15,7 +15,7 @@ import org.springframework.stereotype.Repository;
 public class ${class_name}ServiceImpl implements ${class_name}Service{
 
     @Autowired
-    private ${class_name}Dao ${class_name?uncap_first}Dao;
+    private ${class_name}DAO ${class_name?uncap_first}DAO;
 
     public List<${class_name}> findAll() {
        return ${class_name?uncap_first}Dao.selectAll();

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
  * @author ${author}
  * @date ${sysDate?date}
  */
-public interface ${class_name}Dao {
+public interface ${class_name}DAO {
 
     List<${class_name}> selectAll();
 

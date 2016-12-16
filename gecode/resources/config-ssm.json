@@ -67,12 +67,12 @@
         "template"	:	"dalMapper.ftl",
         "dir"		:	"${project}/${packagePath}/dao",
         "packagePath":	"${packagePath}.dao.${model}",
-        "ePadding"	:	"Dao"
+        "ePadding"	:	"DAO"
     }, {
         "template"	:	"mybatis_xml.ftl",
 //        "dir"		:	"${project}/${packagePath}/dao/${model}",
         "dir"		:	"${project}/mappings/${model}",
-        "ePadding"  :   "Dao",
+        "ePadding"  :   "DAO",
         "packagePath":	"${packagePath}.dao",
         "suffix"	:	"xml"
     }]
