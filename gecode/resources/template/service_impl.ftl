@@ -18,32 +18,32 @@ public class ${class_name}ServiceImpl implements ${class_name}Service{
     private ${class_name}DAO ${class_name?uncap_first}DAO;
 
     public List<${class_name}> findAll() {
-       return ${class_name?uncap_first}Dao.selectAll();
+       return ${class_name?uncap_first}DAO.selectAll();
     }
 
     public List<${class_name}> find${class_name}s(${class_name} record){
-       return ${class_name?uncap_first}Dao.select(record);
+       return ${class_name?uncap_first}DAO.select(record);
     }
 
     public ${class_name} get${class_name}ByPrimaryKey(Object key){
-        return ${class_name?uncap_first}Dao.selectByPrimaryKey(key);
+        return ${class_name?uncap_first}DAO.selectByPrimaryKey(key);
     }
 
     public Integer create${class_name}(${class_name} record){
-        return ${class_name?uncap_first}Dao.insert(record);
+        return ${class_name?uncap_first}DAO.insert(record);
 
     }
 
     public Integer delete${class_name}(${class_name} record){
-        return ${class_name?uncap_first}Dao.delete(record);
+        return ${class_name?uncap_first}DAO.delete(record);
     }
 
     public Integer remove${class_name}(${class_name} record){
-        return ${class_name?uncap_first}Dao.updateByPrimaryKeySelective(record);
+        return ${class_name?uncap_first}DAO.updateByPrimaryKeySelective(record);
     }
 
     public Integer update${class_name}ByPrimaryKey(${class_name} record){
-        return ${class_name?uncap_first}Dao.updateByPrimaryKeySelective(record);
+        return ${class_name?uncap_first}DAO.updateByPrimaryKeySelective(record);
     }
 
 }
